@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Deathwatch</a></li>
+                <li><a href="how.html">Karakter Yapımı</a></li>
+                <li><a href="lejyon.html">Lejyonlar</a></li>
+                <li><a href="class.html">Sınıflar</a></li>
+                <li><a href="armory.html">Cephanelik</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Lcontainer">
+        <h1>Dosyaları İndirin</h1>
+    
+    
+    <a href="dosya/Deathwatch Character Generator.xls" download="Deathwatch Character Generator" class="download-button">
+        <i class="fas fa-file-excel"></i> Karakter Jeneratörü İndir
+    </a>
+    
+    
+
+        <div class="talent-description">
+            İlk başta hoşunuza giden ve özelliklerini beğendiniz lejyonu seçmeniz gerekiyor. Bundan sonra da kendinizi en rahat hissettiğiniz ve en eğlenebileceğinizi düşündüğünüz sınıfı seçmeniz gerekiyor. Bunlardan sonra iş biraz komplike oluyor
+        </div>
+        <div class="talent-description">
+            İlk olarak karakteristikleri öğrenmemiz gerekiyor:
+        </div>
+        <div class="talent-description">
+            <h3>Karakteristikler</h3>
+            <ul>
+                <li>Weapon Skill (WS): Bu karakteristik sizin yakın mesafe silahlarınızı ne kadar iyi kullandığınızı gösterir</li>
+                <li>Ballistic Skill (BS): Bu karakteristik sizin uzak mesafe silahlarınızı ne kadar iyi kullandığınızı gösterir</li>
+                <li>Strenght (S): Bu karakteristik basit, sizin fiziksel gücünüzü temsil ediyor</li>
+                <li>Toughness (T): Bu karakteristik sizin fiziksel dayanıklılığınızı gösterir</li>
+                <li>Agility (Ag): Bu karakteristik basit, sizin çevikliğinizi temsil ediyor</li>
+                <li>Intelligence (Int): Bu karakteristik sizin zekanızı test ediyor, bu karakteristik tıbbi özellikler, büyüler ve bilgi kontrollerine yardımcı olur</li>
+                <li>Perception (Per): Bu karakteristik sizin algılarınızı, 5 duyunuzu temsil ediyor</li>
+                <li>Will Power (WP): Bu karakteristik sizin irade gücünüzü temsil ediyor</li>
+                <li>Fellowship (Fel): Bu karakteristik sizin savaş kardeşlerinizle olan iletişim yeteneklerinizi ve karizmanızı etkiliyor</li>
+
+            </ul>
+            
+        </div>
+        <div class="talent-description">
+            İkinci olarak uzay askerinizin kişiliğini ve tavırlarını genel olarak seçmemiz gerekiyor:
+        </div>
+        <div class="talent-description">
+            <h3>Tavırlar</h3>
+            <ul>
+                <li><strong>Determined</strong>: Zorlu koşullarda bile işini bitirmek için güçlü bir irade gösterir.</li>
+                <li><strong>Stoic</strong>: Savaşın ortasında bile sakin ve sarsılmaz kalır, duyguları göstermez.</li>
+                <li><strong>Proud</strong>: Yeteneklerine ve becerilerine olan güçlü bir inanç taşır.</li>
+                <li><strong>Vengeful</strong>: Kendisine yapılan kötülükleri unutmadan, intikam alma isteğiyle hareket eder.</li>
+                <li><strong>Cautious</strong>: Her zaman dikkatli ve özenli hareket eder, aceleci davranmaktan kaçınır.</li>
+                <li><strong>Resolute</strong>: Hedeflerine sıkı sıkıya bağlıdır ve şüphelerle yüzleştiğinde bile duraksamaz.</li>
+                <li><strong>Relentless</strong>: Karşılaştığı dirence rağmen ileriye doğru devam eder.</li>
+                <li><strong>Honor-Bound</strong>: Yüksek standartlarını ve ahlak kurallarını yansıtan eylemlerle hareket eder.</li>
+                <li><strong>Merciless</strong>: Düşmanlarına karşı hiçbir merhamet veya bağışlama göstermez.</li>
+                <li><strong>Loyal</strong>: Yoldaşlarına ve kendi bölümüne olan sarsılmaz bağlılığını gösterir.</li>
+            </ul>
+            
+        </div>
+        <div class="talent-description">
+            Üçüncü olarak Past Events var, bu daha çok lejyonunuzun geçmişte yaşadığı bir durumda olup olmadığınızı kontrol eder, maalesef şu anlık buraya 50 tane yazıcak kadar vaktim yok. Kendiniz bakabilirsiniz ya da boş bırakabilirsiniz
+        </div>
+        <div class="talent-description">
+            Dördüncü olarak Special Ability, sınıfınıza özel olan özelliklerden birisini seçmeniz gerekiyor
+        </div>
+        <h1>Özelliklerin Açıklanması</h1>
+
+    </div>
+
+
+    <div class="container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>İsim</th>
+                    <th>Gerektirenler</th>
+                    <th>Özellik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abhor the Witch</td>
+                    <td>Adeptus Astartes</td>
+                    <td>Psişik Güçlere karşı direnç için bir görevden önce Kader Puanı harca.</td>
+                </tr>
+                <tr>
+                    <td>Air of Authority</td>
+                    <td>Fel 30</td>
+                    <td>Testte daha fazla hedefi etkiler.</td>
+                </tr>
+                <tr>
+                    <td>Ambidextrous</td>
+                    <td>Ag 30</td>
+                    <td>Her iki eli de eşit derecede iyi kullanır.</td>
+                </tr>
+                <tr>
+                    <td>Armour-Monger</td>
+                    <td>Technmarine</td>
+                    <td>Zırhın fiziksel etkinliğini artırır.</td>
+                </tr>
+                <tr>
+                    <td>Assassin Strike</td>
+                    <td>Ag 40, Acrobatic</td>
+                    <td>Yakın dövüş saldırısından sonra Akrobatik Testi ile serbest hareket.</td>
+                </tr>
+                <tr>
+                    <td>Astartes Weapon Training</td>
+                    <td>—</td>
+                    <td>Silah grubunu cezasız kullanır.</td>
+                </tr>
+                <tr>
+                    <td>Astartes Weapon Specialisation</td>
+                    <td>—</td>
+                    <td>1 hasar azaltır, her zaman Hafif Yaralı olarak kabul edilir.</td>
+                </tr>
+                <tr>
+                    <td>Autosanguine</td>
+                    <td>—</td>
+                    <td>1/2 hasar iyileştirir, her zaman Hafif Yaralı.</td>
+                </tr>
+                <tr>
+                    <td>Bastion of Iron Will</td>
+                    <td>Psy Rating, Strong-Minded, WP 40</td>
+                    <td>Psişik Testlere karşı Çift Savunma Psi Derecesi bonusu.</td>
+                </tr>
+                <tr>
+                    <td>Battle Rage</td>
+                    <td>Frenzy</td>
+                    <td>Frenzy sırasında parry yapabilir.</td>
+                </tr>
+                <tr>
+                    <td>Berserk Charge</td>
+                    <td>—</td>
+                    <td>Yüklenirken +20 bonus alır.</td>
+                </tr>
+                <tr>
+                    <td>Binary Chatter</td>
+                    <td>—</td>
+                    <td>Kontrollü hizmetkarlara +10 bonus.</td>
+                </tr>
+                <tr>
+                    <td>Blademaster</td>
+                    <td>WS 30, Melee Weapon Training (any)</td>
+                    <td>Yakın dövüş atağını yeniden dener, tur başına bir kez.</td>
+                </tr>
+                <tr>
+                    <td>Blind Fighting</td>
+                    <td>Per 30</td>
+                    <td>Görme engelli durumlardaki cezalardan etkilenmez.</td>
+                </tr>
+                <tr>
+                    <td>Bolter Drill</td>
+                    <td>Adeptus Astartes Weapon Training</td>
+                    <td>Yarı otomatik veya tam otomatik çekimlerde ekstra vuruş alır.</td>
+                </tr>
+                <tr>
+                    <td>Bulging Biceps</td>
+                    <td>S 45</td>
+                    <td>Bazı ağır silahların desteğe ihtiyacını kaldırır.</td>
+                </tr>                
+                <tr>
+                    <td>Call to Vengeance</td>
+                    <td>Adeptus Astartes, Fel 40</td>
+                    <td>Kader Puanı harcayarak Alayın Başkaldırısı’nı yeniden kazan.</td>
+                </tr>
+                <tr>
+                    <td>Catfall</td>
+                    <td>Ag 30</td>
+                    <td>Düşme hasarını azaltır.</td>
+                </tr>
+                <tr>
+                    <td>Chem Geld</td>
+                    <td>—</td>
+                    <td>Büyülenmeye ve cazibeye karşı dayanıklıdır.</td>
+                </tr>
+                <tr>
+                    <td>Cleanse and Purify</td>
+                    <td>Basic Weapons (Flame)</td>
+                    <td>Alev silahlarının etkisini arttırır.</td>
+                </tr>
+                <tr>
+                    <td>Combat Formation</td>
+                    <td>Int 40</td>
+                    <td>Teşebbüs bonusu için Int kullanır.</td>
+                </tr>
+                <tr>
+                    <td>Combat Master</td>
+                    <td>WS 30</td>
+                    <td>Karaktere üstün sayıda rakiplere karşı avantaj verir.</td>
+                </tr>
+                <tr>
+                    <td>Combat Sense</td>
+                    <td>Per 40</td>
+                    <td>Teşebbüs bonusunu WS yerine Ag bonusuyla belirler.</td>
+                </tr>
+                <tr>
+                    <td>Concealed Cavity</td>
+                    <td>—</td>
+                    <td>Karakterin gizli bir bölmesi vardır.</td>
+                </tr>
+                <tr>
+                    <td>Counter Attack</td>
+                    <td>WS 40</td>
+                    <td>Karşı atağta başarılıyı elde eder.</td>
+                </tr>
+                <tr>
+                    <td>Crack Shot</td>
+                    <td>BS 40</td>
+                    <td>Menzilli silahlarla +2 Kritik Hasar verir.</td>
+                </tr>                
+                <tr>
+                    <td>Crippling Strike</td>
+                    <td>WS 40</td>
+                    <td>Yakın dövüşte +2 Kritik Hasar verir.</td>
+                </tr>
+                <tr>
+                    <td>Crushing Blow</td>
+                    <td>S 40</td>
+                    <td>Yakın dövüşte +2 Hasar verir.</td>
+                </tr>
+                <tr>
+                    <td>Deadeye Shot</td>
+                    <td>BS 30</td>
+                    <td>Çağrılan atışlar -10 ceza ile yapılır.</td>
+                </tr>
+                <tr>
+                    <td>Death From Above</td>
+                    <td>Adeptus Astartes, Pilot (Personal)</td>
+                    <td>Zıplama paketiyle girerken büyük hasar verir.</td>
+                </tr>
+                <tr>
+                    <td>Deathwatch Training</td>
+                    <td>Adeptus Astartes, member of the Deathwatch</td>
+                    <td>Uzay Askeri, uzaylılarla savaşta bonus alır.</td>
+                </tr>
+                <tr>
+                    <td>Deflect Shot</td>
+                    <td>Ag 50</td>
+                    <td>Karakter ilkel menzilli saldırıları savuşturabilir.</td>
+                </tr>
+                <tr>
+                    <td>Die Hard</td>
+                    <td>WP 40</td>
+                    <td>Kan kaybından ölme şansı tekrar atılır.</td>
+                </tr>
+                <tr>
+                    <td>Disarm</td>
+                    <td>Ag 30</td>
+                    <td>Rakibin silahını düşürmesine zorlar.</td>
+                </tr>
+                <tr>
+                    <td>Disturbing Voice</td>
+                    <td>—</td>
+                    <td>+10 bonus Intimidation ve Interrogation, -10 ceza Fellowship.</td>
+                </tr>
+                <tr>
+                    <td>Double Team</td>
+                    <td>—</td>
+                    <td>Birlikte sıkışma için +10 bonus alır.</td>
+                </tr>
+                <tr>
+                    <td>Dual Shot</td>
+                    <td>Ag 40, Two-Weapon Wielder</td>
+                    <td>Bir Balistik Yetenek Testi hedefi iki kez vurur.</td>
+                </tr>
+                <tr>
+                    <td>Dual Strike</td>
+                    <td>Ag 40, Two-Weapon Wielder</td>
+                    <td>Bir Yakın Dövüş Testi hedefi iki kez vurur.</td>
+                </tr>
+                <tr>
+                    <td>Duty Unto Death</td>
+                    <td>WP 45</td>
+                    <td>Çarpışma sırasında karakter ölümden korkmaz.</td>
+                </tr>
+                <tr>
+                    <td>Electrical Use</td>
+                    <td>Technmarine or Mechanicus Implants</td>
+                    <td>Sorgu, Teknoloji Kullanımı ve Yaygın Bilgi Testlerinde +10 bonus alır.</td>
+                </tr>
+                <tr>
+                    <td>Enemy*</td>
+                    <td>—</td>
+                    <td>Bir organizasyon veya grup karaktere özel olarak düşmanlık besler.</td>
+                </tr>                
+                <tr>
+                    <td>Energy Cache</td>
+                    <td>Technmarine or Mechanicus Implants</td>
+                    <td>Luminan Patlama, Şok ve Yük, Yorgunluğu engeller.</td>
+                </tr>
+                <tr>
+                    <td>Enhanced Bionic Frame</td>
+                    <td>Machinator Array</td>
+                    <td>Gelişmiş Mekanik augmentics özellikleri kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Eye of Vengeance</td>
+                    <td>Astartes Weapons Training, BS 50</td>
+                    <td>Zırhı delip öldürücü bir atış yapar ve Adaletin Öfkesi kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Exemplar of Honour</td>
+                    <td>Adeptus Astartes</td>
+                    <td>Bir Kader Puanı karşılığında Birlik Kazanımı ile takas eder.</td>
+                </tr>
+                <tr>
+                    <td>Exotic Weapon Training</td>
+                    <td>—</td>
+                    <td>Egzotik bir silah türü ile yetenek kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Favoured by the Warp</td>
+                    <td>WP 35</td>
+                    <td>Psişik Fenomeni yeniden atmak için zar atar ve sonucu kabul eder.</td>
+                </tr>
+                <tr>
+                    <td>Fearless</td>
+                    <td>—</td>
+                    <td>Korkuya ve Sabitlenmeye karşı bağışıklık kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Ferric Lure</td>
+                    <td>Technmarine or Mechanicus Implants</td>
+                    <td>WP Testi ile metal objelere erişim sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Flesh Render</td>
+                    <td>Adeptus Astartes</td>
+                    <td>Zincir silahlarla fazladan hasar oluşturur.</td>
+                </tr>
+                <tr>
+                    <td>Foresight</td>
+                    <td>Int 30</td>
+                    <td>Testlerden önce +10 bonus almak için düşünür.</td>
+                </tr>
+                <tr>
+                    <td>Frenzy</td>
+                    <td>—</td>
+                    <td>Saldırı bonusları kazanmak için öfkeli hale geçer.</td>
+                </tr>
+                <tr>
+                    <td>Furious Assault</td>
+                    <td>WS 35</td>
+                    <td>Başarılı bir WS Testi sonrası ikinci bir saldırı yapar.</td>
+                </tr>
+                <tr>
+                    <td>Good Reputation</td>
+                    <td>Fel 50, Peer</td>
+                    <td>Belirli bir grup içinde karakterin itibarını artırır.</td>
+                </tr>
+                <tr>
+                    <td>Gun Blessing</td>
+                    <td>Technmarine or Mechanicus Implants</td>
+                    <td>10m yarıçapında silahları anında açar.</td>
+                </tr>
+                <tr>
+                    <td>Gunslinger</td>
+                    <td>BS 40, Two-Weapon Wielder</td>
+                    <td>Çift tabanca ile savaşırken sadece -10 ceza alır.</td>
+                </tr>
+                <tr>
+                    <td>Hammer Blow</td>
+                    <td>Adeptus Astartes</td>
+                    <td>Yakın dövüş silahı ile güçlü bir saldırı yapar.</td>
+                </tr>
+                <tr>
+                    <td>Hard Target</td>
+                    <td>Ag 40</td>
+                    <td>Rakipler -20 BS Testi alır.</td>
+                </tr>
+                <tr>
+                    <td>Hardy</td>
+                    <td>T 40</td>
+                    <td>Her zaman hafif şekilde iyileşir.</td>
+                </tr>
+                <tr>
+                    <td>Hatred*</td>
+                    <td>—</td>
+                    <td>Belirli yaratıklara saldırı için +10 bonus.</td>
+                </tr>
+                <tr>
+                    <td>Heavy Weapon Training*</td>
+                    <td>—</td>
+                    <td>Ağır silahlarla yetkinlik kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Heightened Senses*</td>
+                    <td>—</td>
+                    <td>Belirli bir duyuda +10 bonus alır.</td>
+                </tr>
+                <tr>
+                    <td>Hip Shooting</td>
+                    <td>BS 40, Ag 40</td>
+                    <td>Hareket halindeyken serbest atış yapar.</td>
+                </tr>
+                <tr>
+                    <td>Hot Shot Pilot</td>
+                    <td>—</td>
+                    <td>Uzaylılarla savaşta avantaj sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Hunter of Aliens</td>
+                    <td>—</td>
+                    <td>Uzaylılarla savaşta avantaj sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Improved Warp Sense</td>
+                    <td>Warp Sense</td>
+                    <td>Psişik Algılama Testini serbest şekilde yapar.</td>
+                </tr>
+                <tr>
+                    <td>Incinerator</td>
+                    <td>Adeptus Astartes, Heavy Weapons (Flame)</td>
+                    <td>Alev silahlarıyla artan etkiler sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Inspire Wrath</td>
+                    <td>Adeptus Astartes, Fel 30</td>
+                    <td>Yoldaşların moralini artırır ve savaş öfkesini tetikler.</td>
+                </tr>
+                <tr>
+                    <td>Interrogator</td>
+                    <td>Int 35, Fel 30</td>
+                    <td>Sorgulama ve cezbetme testlerinde +10 bonus alır.</td>
+                </tr>
+                <tr>
+                    <td>Into the Jaws of Hell</td>
+                    <td>Adeptus Astartes, WP 40</td>
+                    <td>Korkusuzca düşman hatlarına saldırabilir.</td>
+                </tr>
+                <tr>
+                    <td>Iron Discipline</td>
+                    <td>WP 30</td>
+                    <td>Yakındaki müttefiklere korkuya karşı bağışıklık sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Iron Jaw</td>
+                    <td>T 40</td>
+                    <td>Sersemlemeye karşı daha dayanıklı hale gelir.</td>
+                </tr>
+                <tr>
+                    <td>Jaded</td>
+                    <td>WP 30</td>
+                    <td>Olağanüstü korkutucu olaylara bağışıklık kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Killing Strike</td>
+                    <td>WS 50</td>
+                    <td>Öldürücü darbeler yapar, parry edilemez.</td>
+                </tr>
+                <tr>
+                    <td>Leap Up</td>
+                    <td>Ag 30</td>
+                    <td>Yerden kalkmak için hareket harcamaz.</td>
+                </tr>
+                <tr>
+                    <td>Lightning Attack</td>
+                    <td>WS 50</td>
+                    <td>Yakın dövüş sırasında ek saldırılar yapar.</td>
+                </tr>
+                <tr>
+                    <td>Lightning Reflexes</td>
+                    <td>Ag 50</td>
+                    <td>Teşebbüs sırasında +2 bonus alır.</td>
+                </tr>
+                <tr>
+                    <td>Litany of Hate</td>
+                    <td>Adeptus Astartes</td>
+                    <td>Takım arkadaşlarına ekstra saldırı bonusu verir.</td>
+                </tr>
+                <tr>
+                    <td>Luminan Charge</td>
+                    <td>Energy Cache</td>
+                    <td>Mekanik güçle dolum sağlar ve enerji patlamaları yapar.</td>
+                </tr>
+                <tr>
+                    <td>Machinator Array</td>
+                    <td>Mechanicus Implants</td>
+                    <td>Daha iyi mekanik augmentasyonlar sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Marksman</td>
+                    <td>BS 35</td>
+                    <td>Menzilli silahlarla -10 ceza olmadan hedef alabilir.</td>
+                </tr>
+                <tr>
+                    <td>Master Chirurgeon</td>
+                    <td>Medicae</td>
+                    <td>Tıbbi becerilerde ekstra uzmanlık sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Master Orator</td>
+                    <td>Fel 40</td>
+                    <td>Çevredeki herkese ilham verir.</td>
+                </tr>
+                <tr>
+                    <td>Mastery</td>
+                    <td>Astartes Weapon Training, WS 50</td>
+                    <td>Belirli bir silah grubunda ustalaşır.</td>
+                </tr>
+                <tr>
+                    <td>Mechadendrite Use*</td>
+                    <td>Mechanicus Implants</td>
+                    <td>Mechadendrite kullanımı için özel eğitim alır.</td>
+                </tr>
+                <tr>
+                    <td>Mighty Shot</td>
+                    <td>BS 40</td>
+                    <td>Menzilli silahlarla +2 ekstra hasar verir.</td>
+                </tr>
+                <tr>
+                    <td>Nerves of Steel</td>
+                    <td>WP 40</td>
+                    <td>Korkuya karşı dayanıklıdır ve panik yapmaz.</td>
+                </tr>
+                <tr>
+                    <td>Never Die</td>
+                    <td>Adeptus Astartes</td>
+                    <td>Savaş alanında hayatta kalma şansını artırır.</td>
+                </tr>
+                <tr>
+                    <td>Peer*</td>
+                    <td>Fel 30</td>
+                    <td>Belirli bir grupta itibar kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Preternatural Speed</td>
+                    <td>Ag 50</td>
+                    <td>Savaş sırasında daha hızlı hareket eder.</td>
+                </tr>
+                <tr>
+                    <td>Precision Killer</td>
+                    <td>BS 40, Marksman</td>
+                    <td>Belirli zayıf noktalara saldırır.</td>
+                </tr>
+                <tr>
+                    <td>Rapid Reload</td>
+                    <td>Ag 35</td>
+                    <td>Silahları daha hızlı yeniden doldurur.</td>
+                </tr>
+                <tr>
+                    <td>Resistance*</td>
+                    <td>—</td>
+                    <td>Belirli bir duruma karşı bağışıklık sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Rite of Sanctioning</td>
+                    <td>Adeptus Astartes</td>
+                    <td>Psişik güçlere karşı direnci artırır.</td>
+                </tr>
+                <tr>
+                    <td>Shield Wall</td>
+                    <td>WS 30, Shield</td>
+                    <td>Kalkan kullanırken daha iyi savunma sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Sound Constitution*</td>
+                    <td>—</td>
+                    <td>Her seferinde ekstra dayanıklılık puanı kazanır.</td>
+                </tr>
+                <tr>
+                    <td>Step Aside</td>
+                    <td>Ag 40, Dodge</td>
+                    <td>Ekstra bir savunma hareketi yapar.</td>
+                </tr>
+                <tr>
+                    <td>Storm of Iron</td>
+                    <td>BS 50, Bolter Drill</td>
+                    <td>Tam otomatik çekimlerde ekstra vuruş yapar.</td>
+                </tr>
+                <tr>
+                    <td>Swift Attack</td>
+                    <td>WS 40</td>
+                    <td>Ekstra yakın dövüş saldırısı yapar.</td>
+                </tr>
+                <tr>
+                    <td>Target Selection</td>
+                    <td>BS 50, Marksman</td>
+                    <td>Kitle arasında belirli bir hedefe saldırır.</td>
+                </tr>
+                <tr>
+                    <td>Technical Knock</td>
+                    <td>Intelligence 30</td>
+                    <td>Karmaşık silahları daha hızlı onarır.</td>
+                </tr>
+                <tr>
+                    <td>Two-Weapon Wielder</td>
+                    <td>Ag 35</td>
+                    <td>İki silahı aynı anda kullanır.</td>
+                </tr>
+                <tr>
+                    <td>Unarmed Master</td>
+                    <td>WS 50</td>
+                    <td>Silahsız savaşta üstünlük sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Warp Conduit</td>
+                    <td>Psy Rating 5+</td>
+                    <td>Psişik güçlerde daha güçlü yetenek sağlar.</td>
+                </tr>
+                <tr>
+                    <td>Warp Sense</td>
+                    <td>Psy Rating, Per 30</td>
+                    <td>Psişik Algılama Testlerini kolaylaştırır.</td>
+                </tr>
+                <tr>
+                    <td>Whirlwind of Death</td>
+                    <td>WS 60</td>
+                    <td>Düşmanlarla çevrili durumdayken daha fazla saldırı yapar.</td>
+                </tr>
+                <tr>
+                    <td>Will of Iron</td>
+                    <td>WP 45</td>
+                    <td>Psişik saldırılara karşı dayanıklılığı artırır.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

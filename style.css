@@ -1,0 +1,262 @@
+header {
+    background-color: #2c2c2c;
+    padding: 10px 20px;
+    width: 100%;
+    position: sticky; /* Header sabit kalsın */
+    top: 0; /* Yukarıda kalacak şekilde konumlandır */
+    z-index: 10; /* Arka planın üstünde olsun */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Liste işaretlerini kaldır */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f39c12; /* Üzerine gelince renk değiştir */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Elemanları dikey sırala */
+    align-items: center; /* Tüm elemanları ortala */
+    margin: 0; /* Tarayıcı varsayılan boşluklarını kaldır */
+    background-color: #232323; /* Yedek arka plan rengi */
+    padding: 0; /* Ekstra boşlukları kaldır */
+    position: relative; /* Arka plan efekti için gerekli */
+    min-height: 100vh; /* Sayfanın tamamını kapsa */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Arka plan her zaman görünür kalsın */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('resimler/BG.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi tamamen kapla */
+    background-position: center; /* Resmi ortala */
+    filter: blur(10px); /* Bulanıklık efekti */
+    z-index: -1; /* Diğer içeriklerin altında kalmasını sağla */
+    pointer-events: none; /* Arka planın tıklanabilir olmamasını sağla */
+}
+
+.container {
+    position: relative; /* İçeriğin normal akışta kalması */
+    z-index: 1; /* İçeriği arka planın üstüne getir */
+    max-width: 800px; /* İçeriği sınırlı genişlikte tut */
+    width: 100%;
+    padding: 20px;
+    color: white;
+}
+
+.ortaResim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Tüm genişliği kullan */
+    margin-bottom: 0; /* Altına boşluk bırakma */
+}
+
+.ortaResim img {
+    max-width: 100%; /* Resmi ekran boyutuna göre ölçekle */
+    max-height: 50%; /* Yüksekliği sınırla */
+    object-fit: contain; /* Resim oranını koru */
+}
+
+.lejyonResim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Tüm genişliği kullan */
+    margin-bottom: 0; /* Altına boşluk bırakma */
+}
+
+.lejyonResim img {
+    max-width: 100%; /* Resmi ekran boyutuna göre ölçekle */
+    max-height: 50%; /* Yüksekliği sınırla */
+    object-fit: contain; /* Resim oranını koru */
+}
+
+#Anlama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; /* Metni ortala */
+    margin: 10px 0; /* Yukarı ve aşağı boşluğu minimuma indir */
+}
+
+#Quote {
+    position: relative;       /* Yerleşimi için relatif pozisyon kullan */
+    left: -310px;              /* 50px sola kaydırma (isteğe bağlı) */
+    color: white;             /* Yazı rengi beyaz */
+    font-weight: bold;        /* Yazıyı kalın yap */
+    margin-top: 20px;         /* Üstten boşluk */
+    text-align: left;         /* Yazıyı sola hizala */
+    max-width: 100%;          /* Genişliği sınırlama */
+}
+
+#Description {
+    max-width: 800px; /* Metnin genişliğini sınırla */
+    margin: 0 auto;   /* Metni yatayda ortala */
+    padding: 20px;    /* Etrafına boşluk ekle */
+}
+
+#Description p {
+    margin-bottom: 15px; /* Paragraflar arasında boşluk */
+    line-height: 1.8;    /* Satırlar arasında mesafe */
+    color: white;        /* Yazı rengi */
+    text-align: justify; /* Metni iki yana yasla */
+}
+
+.Lcontainer {
+    display: flex;
+    flex-direction: column; /* Elemanları dikey sırala */
+    align-items: center; /* Ortala */
+    gap: 30px; /* Lejyonlar arasında boşluk bırak */
+}
+
+.Lcontainer img {
+    width: 1000px;
+    height: auto;
+}
+
+.lejyon-item {
+    display: flex;
+    align-items: center; /* Resim ve yazıyı dikey olarak ortala */
+    justify-content: center; /* Yatayda ortala */
+    gap: 20px; /* Resim ve yazı arasında boşluk */
+    max-width: 800px; /* İçeriğin genişliğini sınırlama */
+    text-align: justify; /* Yazıyı iki yana yasla */
+}
+
+.talent-description {
+    background-color: rgba(0, 0, 0, 0.7); /* Yarı saydam siyah arka plan */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 90%; /* Genişlik sınırlandırması */
+}
+
+.image-wrapper img {
+    width: 100%;
+    max-width: 500px; /* Resmin boyutunu sınırla */
+    height: auto;
+    border-radius: 10px;
+}
+
+.lejyon-item img {
+    width: 500px; /* Resmin genişliği */
+    height: auto; /* Oranı koruyarak ölçekle */
+    border-radius: 10px; /* Resme hafif köşe yuvarlaması */
+}
+
+.lejyon-item p {
+    color: white; /* Yazı rengi */
+    font-size: 16px; /* Yazı boyutu */
+    line-height: 1.5; /* Satır arası boşluk */
+    max-width: 400px; /* Yazı genişliğini sınırla */
+}
+
+.Lcontainer h1 {
+    color: white; /* Yazı rengi */
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    min-width: 400px;
+    width: 100%;
+    text-align: left;
+    color: white; /* Yazı rengini beyaz yap */
+    background-color: #2c2c2c; /* Arka plan rengi */
+}
+
+.styled-table th, 
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+}
+
+.styled-table thead tr {
+    background-color: #444; /* Başlık için daha koyu bir arka plan */
+    color: white;
+    font-weight: bold;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #3a3a3a; /* Çift satırlara farklı bir arka plan */
+}
+
+.styled-table tbody tr:hover {
+    background-color: #555; /* Üzerine gelince renk değiştir */
+}
+
+.talent-description h3 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Başlık ile liste arasında boşluk */
+}
+
+.talent-description ul {
+    padding-left: 20px; /* Liste işaretleri için boşluk */
+    list-style: none;
+}
+
+.talent-description ul li {
+    margin-bottom: 5px; /* Liste elemanları arasında boşluk */
+    line-height: 1.5; /* Satır yüksekliği */
+    font-size: 16px;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Excel için yeşil */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button.pdf {
+    background-color: #FF5722; /* PDF için kırmızı */
+}
+
+.download-button:hover {
+    opacity: 0.9;
+}
+
+.download-button i {
+    margin-right: 10px;
+}
